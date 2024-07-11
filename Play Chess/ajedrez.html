@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ajedrez.css">
+    <script src="ajedrez.js"></script>
+    <title>Juego ajedrez</title>
+</head>
+
+<body>
+    <div><h1>chess</h1></div>
+    <div class="tablero">
+        <div class="letra"></div>
+        <div class="letra">A</div>
+        <div class="letra">B</div>
+        <div class="letra">C</div>
+        <div class="letra">D</div>
+        <div class="letra">E</div>
+        <div class="letra">F</div>
+        <div class="letra">G</div>
+        <div class="letra">H</div>
+        <div class="num">1</div>
+        <div class="a" id="A1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="B1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="C1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="D1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="E1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="F1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="G1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="H1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="num">2</div>
+        <div id="A2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="B2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="C2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="D2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="E2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="F2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="G2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="H2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="num">3</div>
+        <div class="a" id="A3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="B3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="C3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="D3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="E3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="F3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="G3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="H3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="num">4</div>
+        <div id="A4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="B4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="C4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="D4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="E4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="F4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="G4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="H4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="num">5</div>
+        <div class="a" id="A5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="B5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="C5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="D5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="E5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="F5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="G5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="H5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="num">6</div>
+        <div id="A6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="B6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="C6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="D6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="E6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="F6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="G6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="H6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="num">7</div>
+        <div class="a" id="A7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="B7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="C7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="D7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="E7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="F7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="G7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="H7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="num">8</div>
+        <div id="A8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="B8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="C8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="D8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="E8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="F8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="G8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div class="a" id="H8" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    </div>
+
+    <div>
+
+        <button id="btnReiniciar" onclick="reiniciar()">Reiniciar</button>
+
+    </div>
+</body>
+
+</html>
